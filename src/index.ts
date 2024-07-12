@@ -58,14 +58,31 @@
 
 //First of all it is an object. Due to it we can take some VALUE by name of property
 
-enum Sizes {
-  small = "small",
-  medium = "medium",
-  large = "large",
-}
+// enum Sizes {
+//   small = "small",
+//   medium = "medium",
+//   large = "large",
+// }
 
 // let button: Sizes = Sizes.small;
 // let button2: Sizes = Sizes.big;❌ Becouse the Object does`t includ PROPERTY like "big"
- 
 
+///////////////////////////////////
+//funtions//
 
+//in round brackets () i get 2 numbers with their types
+// and followed by them i tell to function what it should return
+//so => get 2 num, return string
+
+// function add(num1: number, num2: number): string {
+//   return `${num1}` + `${num2}`;
+// }
+
+// console.log(add(2, 2));
+
+//if function does not  return anything i have to put a type like ":void "after round brackets
+function add(num1: number, num2: number): void {
+  console.log(num1 + num2);
+}
+
+add(2, 3);
