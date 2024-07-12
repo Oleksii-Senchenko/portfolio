@@ -1,14 +1,11 @@
 "use strict";
-// type User = {
-//     name: string;
-//     age: number;
-//   };
-const user = {
-    name: "Bob",
-    age: 3,
+const fruits = {
+    apples: 1,
+    orange: 2,
+    banana: 7,
 };
-const admin = {
-    name: "Bob",
-    age: 3,
-    role: "admin",
+const vegetables = {
+    onion: 2,
+    cucumber: 32,
+    potato: "42",
 };
