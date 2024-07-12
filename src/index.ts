@@ -81,8 +81,24 @@
 // console.log(add(2, 2));
 
 //if function does not  return anything i have to put a type like ":void "after round brackets
-function add(num1: number, num2: number): void {
-  console.log(num1 + num2);
-}
+// function add(num1: number, num2: number): void {
+//   console.log(num1 + num2);
+// }
 
-add(2, 3);
+// add(2, 3);
+
+////////function with does not return anything but work with oject in it////
+
+type User = {
+  name: string;
+  age: number;
+  hobby: string;
+};
+
+function userConstructor(name: string, age: number, hobby: string): User {
+  return {
+    name,
+    age,
+    hobby,
+  };
+}
