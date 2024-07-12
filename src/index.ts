@@ -89,16 +89,36 @@
 
 ////////function with does not return anything but work with oject in it////
 
-type User = {
-  name: string;
-  age: number;
-  hobby: string;
-};
+// type User = {
+//   name: string;
+//   age: number;
+//   hobby: string;
+// };
 
-function userConstructor(name: string, age: number, hobby: string): User {
-  return {
-    name,
-    age,
-    hobby,
-  };
-}
+// function userConstructor(name: string, age: number, hobby: string): User {
+//   return {
+//     name,
+//     age,
+//     hobby,
+//   };
+// }
+
+
+///////////////////////////
+//////how can I describe fn in an object by types
+
+// type Car = {
+//   color: string;
+//   price: number;
+//   currency: string;
+//   start: () => {};
+// };
+
+// const Car = {
+//   color: "White",
+//   price: 12,
+//   currency: "USD",
+//   start() {
+//     console.log("Start");
+//   },
+// };
