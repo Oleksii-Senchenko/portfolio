@@ -103,7 +103,6 @@
 //   };
 // }
 
-
 ///////////////////////////
 //////how can I describe fn in an object by types
 
@@ -122,3 +121,19 @@
 //     console.log("Start");
 //   },
 // };
+
+type People = {
+  name: string;
+  age: number;
+  role?: string;
+};
+
+const user: People = {
+  name: "Bob",
+  age: 3,
+};
+const admin: People = {
+  name: "Bob",
+  age: 3,
+  role: "admin",
+};
