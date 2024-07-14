@@ -80,5 +80,45 @@ function checkUserRole(role: UserRole): void {
   }
 }
 
-const call = checkUserRole(UserRole.Admin)
+const call = checkUserRole(UserRole.Admin);
 console.log(call);
+
+//functions
+
+// type Userr = {
+//   name: string;
+// };
+
+// function great(user: User): void {
+//   console.log(`Hello, ${user.name}`);
+// }
+
+type Userr = {
+  name: string;
+  age: number;
+  hobby: string;
+};
+
+function userConstructor(name: string, age: number, hobby: string): Userr {
+  return {
+    name,
+    age,
+    hobby,
+  };
+}
+
+type Car = {
+  color: string;
+  price: number;
+  currency: string;
+  start: (color: string) => void;
+};
+
+const Car: Car = {
+  color: "red",
+  price: 111,
+  currency: "UAH",
+  start: (color) => {
+    console.log("Hello" + color);
+  },
+};

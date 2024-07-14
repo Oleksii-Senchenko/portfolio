@@ -54,3 +54,18 @@ function checkUserRole(role) {
 }
 const call = checkUserRole(UserRole.Admin);
 console.log(call);
+function userConstructor(name, age, hobby) {
+    return {
+        name,
+        age,
+        hobby,
+    };
+}
+const Car = {
+    color: "red",
+    price: 111,
+    currency: "UAH",
+    start: (color) => {
+        console.log("Hello" + color);
+    },
+};
