@@ -69,3 +69,12 @@ const Car = {
         console.log("Hello" + color);
     },
 };
+const uuser = {
+    name: "Sank",
+    age: 12,
+};
+const admin = {
+    name: "Sank",
+    age: 12,
+    role: "Admin",
+};

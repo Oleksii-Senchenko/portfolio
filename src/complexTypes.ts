@@ -122,3 +122,22 @@ const Car: Car = {
     console.log("Hello" + color);
   },
 };
+
+// optional params in type
+
+type optionalType = {
+  name: string;
+  age: number;
+  role?: string;
+};
+
+const uuser: optionalType = {
+  name: "Sank",
+  age: 12,
+};
+
+const admin: optionalType = {
+  name: "Sank",
+  age: 12,
+  role: "Admin",
+};
