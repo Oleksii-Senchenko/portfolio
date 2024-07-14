@@ -61,15 +61,20 @@ function updateField(todo, fieldToUpdate) {
 }
 const todo2 = updateField(todo1, { complited: true });
 console.log(todo2);
-const jhon = {
-    name: "Bober",
-    age: 12,
-};
+////////read only Readonly
+// type User = {
+//   name: string;
+//   age: number;
+// };
+// const jhon: Readonly<User> = {
+//   name: "Bober",
+//   age: 12,
+// };
 //user.age = 12 ()=> error becouse we used property "Readonly"
 const arrOfNum = [1, 2, 3, 4, 5, 6, 7];
 const bobSummery = {
     name: "bob",
-    age: 12
+    age: 12,
     // address: "Lavanda" It does not work becouse wo took only name and age in //=>"type PersonSummery"<=\\
     //IT`S PICK
 };
@@ -79,3 +84,4 @@ const julianSummery = {
     // address: "Lavanda" It does not work becouse wo took all types without address in //=>"type PromisWithOutAddress"<=\\
     //IT`S OMIT
 };
+//Task 1\\

@@ -90,15 +90,15 @@ console.log(todo2);
 
 ////////read only Readonly
 
-type User = {
-  name: string;
-  age: number;
-};
+// type User = {
+//   name: string;
+//   age: number;
+// };
 
-const jhon: Readonly<User> = {
-  name: "Bober",
-  age: 12,
-};
+// const jhon: Readonly<User> = {
+//   name: "Bober",
+//   age: 12,
+// };
 
 //user.age = 12 ()=> error becouse we used property "Readonly"
 
@@ -107,38 +107,38 @@ const arrOfNum: ReadonlyArray<number> = [1, 2, 3, 4, 5, 6, 7];
 // arrOfNum[0] = 1 Error becouse we used property "Readonly"
 // arrOfNum.push(6)
 
-
-
 //////////pick
 
 type Person = {
-  age:number,
-  name: string,
-  address: string
-}
+  age: number;
+  name: string;
+  address: string;
+};
 
-type PersonSummery = Pick<Person, 'name' | "age">
+type PersonSummery = Pick<Person, "name" | "age">;
 
 const bobSummery: PersonSummery = {
   name: "bob",
-  age: 12
+  age: 12,
   // address: "Lavanda" It does not work becouse wo took only name and age in //=>"type PersonSummery"<=\\
 
   //IT`S PICK
-}
-
+};
 
 type Perso1 = {
-  age:number,
-  name: string,
-  address: string
-}
+  age: number;
+  name: string;
+  address: string;
+};
 
-type PromisWithOutAddress = Omit<Perso1, 'address'>
+type PromisWithOutAddress = Omit<Perso1, "address">;
 
 const julianSummery: PromisWithOutAddress = {
   name: "bob",
   age: 12,
   // address: "Lavanda" It does not work becouse wo took all types without address in //=>"type PromisWithOutAddress"<=\\
   //IT`S OMIT
-}
+};
+
+
+//Task 1\\
