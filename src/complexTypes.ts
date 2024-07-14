@@ -24,28 +24,61 @@ type User = {
 };
 
 const user: User = {
-    name: "Yoyo",
-    age: 12,
-  };
-
+  name: "Yoyo",
+  age: 12,
+};
 
 //custom-made-type
 
-type eventType = 'lesson' | 'work'
+type eventType = "lesson" | "work";
 
 // const events: eventType = 'close' || error because type !== lesson or work
 
-
 //any
 
-let age: any = 23
-age = 12
-age = '12'
-
+let age: any = 23;
+age = 12;
+age = "12";
 
 //unknown
 
-let voice: unknown = "high"
-voice = 23
+let voice: unknown = "high";
+voice = 23;
 // voice.toString() || Error because "voice" is unknown what type is in it, so we can't change the "voice"
 //This suggests that the developer will move on, and when finished, should come back and change the property type
+
+//enum
+enum UserRole {
+  Admin = "admin",
+  Moderator = "moderator",
+  User = "user",
+  Guest = "guest",
+}
+
+function checkUserRole(role: UserRole): void {
+  switch (role) {
+    case UserRole.Admin:
+      console.log("You are an admin");
+
+      break;
+    case UserRole.Moderator:
+      console.log("You are an Moderator");
+
+      break;
+    case UserRole.User:
+      console.log("You are an User");
+
+      break;
+    case UserRole.Guest:
+      console.log("You are an Guest");
+
+      break;
+
+    default:
+      console.log("Unknown role");
+      break;
+  }
+}
+
+const call = checkUserRole(UserRole.Admin)
+console.log(call);
