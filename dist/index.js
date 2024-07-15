@@ -26,11 +26,11 @@ let output1 = identity("srting"); //
 let output2 = identity(1); //
 //
 ///////////////////////////////////////////////////////////
-function reverse(items) {
-    return items.reverse();
-}
-let option1 = reverse([1, 2, 3, 4, 5, 6, 7]);
-let option2 = reverse(["g", "f", "e", "d", "c", "b", "a"]);
+// function reverse<T>(items: T[]): T[] {
+//   return items.reverse();
+// }
+// let option1 = reverse<number>([1, 2, 3, 4, 5, 6, 7]);
+// let option2 = reverse<string>(["g", "f", "e", "d", "c", "b", "a"]);
 // console.log(option1);
 // console.log(option2);
 function lengthOfObject(obj) {
@@ -46,11 +46,6 @@ const students = {
     name: "Bob",
     age: 22,
 };
-function getProperty(obj, key) {
-    return obj[key];
-}
-const info = getProperty(students, "age");
-console.log(info);
 const todo1 = {
     title: "Learn TS",
     description: "Stydy basick ts",
@@ -61,17 +56,6 @@ function updateField(todo, fieldToUpdate) {
 }
 const todo2 = updateField(todo1, { complited: true });
 console.log(todo2);
-////////read only Readonly
-// type User = {
-//   name: string;
-//   age: number;
-// };
-// const jhon: Readonly<User> = {
-//   name: "Bober",
-//   age: 12,
-// };
-//user.age = 12 ()=> error becouse we used property "Readonly"
-const arrOfNum = [1, 2, 3, 4, 5, 6, 7];
 const julianSummery = {
     name: "bob",
     age: 12,

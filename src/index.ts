@@ -29,12 +29,12 @@ let output2 = identity<number>(1); //
 //
 ///////////////////////////////////////////////////////////
 
-function reverse<T>(items: T[]): T[] {
-  return items.reverse();
-}
+// function reverse<T>(items: T[]): T[] {
+//   return items.reverse();
+// }
 
-let option1 = reverse<number>([1, 2, 3, 4, 5, 6, 7]);
-let option2 = reverse<string>(["g", "f", "e", "d", "c", "b", "a"]);
+// let option1 = reverse<number>([1, 2, 3, 4, 5, 6, 7]);
+// let option2 = reverse<string>(["g", "f", "e", "d", "c", "b", "a"]);
 
 // console.log(option1);
 // console.log(option2);
@@ -56,15 +56,15 @@ const students = {
   age: 22,
 };
 
-function getProperty<ObjectType, KeyType extends keyof ObjectType>(
-  obj: ObjectType,
-  key: KeyType
-) {
-  return obj[key];
-}
+// function getProperty<ObjectType, KeyType extends keyof ObjectType>(
+//   obj: ObjectType,
+//   key: KeyType
+// ) {
+//   return obj[key];
+// }
 
-const info = getProperty(students, "age");
-console.log(info);
+// const info = getProperty(students, "age");
+// console.log(info);
 ///////////////////////////////////////
 
 // If we want to change the value of any object key, we must use "Partial"
@@ -102,7 +102,7 @@ console.log(todo2);
 
 //user.age = 12 ()=> error becouse we used property "Readonly"
 
-const arrOfNum: ReadonlyArray<number> = [1, 2, 3, 4, 5, 6, 7];
+// const arrOfNum: ReadonlyArray<number> = [1, 2, 3, 4, 5, 6, 7];
 
 // arrOfNum[0] = 1 Error becouse we used property "Readonly"
 // arrOfNum.push(6)

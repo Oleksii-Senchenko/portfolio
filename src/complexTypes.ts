@@ -1,7 +1,7 @@
 // array - [], object - {}
 
 //arr
-const arr: number[] = [2, 3, 4, 5, 6]; //array of numbers (numbers[])
+// const arr: number[] = [2, 3, 4, 5, 6]; //array of numbers (numbers[])
 // arr.push('12')  || error because type !== number
 
 // const str: string[] = ["a", "b", "c"];
