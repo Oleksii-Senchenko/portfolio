@@ -42,3 +42,8 @@ const callFn = todo(list, {
 const euser = {
     address: 'Grove street'
 };
+const fruitss = {
+    avacado: 32,
+    bananas: 15,
+    blubery: 123,
+};

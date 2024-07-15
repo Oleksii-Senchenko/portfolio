@@ -56,18 +56,30 @@ console.log(result);
 console.log(result2);
 let myGender;
 const page1 = {
-    title: 'The awesome page',
+    title: "The awesome page",
     likes: 100,
-    accounts: ['Max', 'Anton', 'Nikita'],
-    status: 'open',
+    accounts: ["Max", "Anton", "Nikita"],
+    status: "open",
     details: {
-        createAt: new Date('2021-01-01'),
-        updateAt: new Date('2021-05-01'),
-    }
+        createAt: new Date("2021-01-01"),
+        updateAt: new Date("2021-05-01"),
+    },
 };
 const page2 = {
-    title: 'Python or Js',
+    title: "Python or Js",
     likes: 5,
-    accounts: ['Alex'],
-    status: 'close',
+    accounts: ["Alex"],
+    status: "close",
 };
+function compare(top, bottom) {
+    return {
+        name: top.name,
+        color: top.color,
+        position: bottom.position,
+        weight: bottom.weight,
+    };
+}
+//task 3
+function merge(objA, objB) {
+    return Object.assign({}, objA, objB);
+}

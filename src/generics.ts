@@ -89,3 +89,20 @@ type MainOfPerson = Omit<Person, "name"| 'age'>
 const euser:MainOfPerson = {
   address: 'Grove street'
 }
+
+//record
+
+// type Goods = {
+//     [key: string]: number;
+//   };
+
+// they're  same
+
+ type CityDataBase = Record<string, number>
+
+const fruitss: CityDataBase = {
+    avacado: 32,
+    bananas: 15,
+    blubery: 123,
+  };
+  
