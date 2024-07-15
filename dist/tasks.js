@@ -17,7 +17,6 @@ let some;
 some = "Text";
 let str;
 str = some;
-let person = ["Max", 21];
 //task 6
 function showMessage(message) {
     console.log(message);

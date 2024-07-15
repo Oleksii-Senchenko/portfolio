@@ -38,3 +38,7 @@ function todo(todo, fieldsToUpdates) {
 const callFn = todo(list, {
     description: "Hiting putin by bullets"
 });
+//without name and page
+const euser = {
+    address: 'Grove street'
+};

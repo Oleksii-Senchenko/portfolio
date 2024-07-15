@@ -58,3 +58,34 @@ function todo(todo:Todo, fieldsToUpdates: Partial<Todo>):Todo {
 const callFn = todo(list, {
     description: "Hiting putin by bullets"
 })
+
+
+//pick
+// type Person ={
+//     name: string,
+//     age: number,
+//     address: string
+// }
+
+// type MainOfPerson = Pick<Person, "name"| 'age'>
+//only name and age
+
+// const euser:MainOfPerson = {
+//     name: "Bom",
+//     age: 12
+// }
+
+//omit
+type Person ={
+    name: string,
+    age: number,
+    address: string
+}
+
+type MainOfPerson = Omit<Person, "name"| 'age'>
+//without name and page
+
+
+const euser:MainOfPerson = {
+  address: 'Grove street'
+}

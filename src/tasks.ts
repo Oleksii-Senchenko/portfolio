@@ -20,8 +20,8 @@ let str: string;
 str = some as string;
 
 //task 4
-type Person = [string, number];
-let person: Person = ["Max", 21];
+// type Person = [string, number];
+// let person: Person = ["Max", 21];
 
 //task 5
 type Sth = number | string;
