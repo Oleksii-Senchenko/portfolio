@@ -46,6 +46,21 @@ const students = {
     name: "Bob",
     age: 22,
 };
+// function getProperty<ObjectType, KeyType extends keyof ObjectType>(
+//   obj: ObjectType,
+//   key: KeyType
+// ) {
+//   return obj[key];
+// }
+// const info = getProperty(students, "age");
+// console.log(info);
+///////////////////////////////////////
+// If we want to change the value of any object key, we must use "Partial"
+// type Todo = {
+//   title: string;
+//   description: string;
+//   complited: boolean;
+// };
 const todo1 = {
     title: "Learn TS",
     description: "Stydy basick ts",

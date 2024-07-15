@@ -27,3 +27,14 @@ function getProperty(obj, key) {
 }
 const student1 = getProperty(student, "age");
 console.log(student1);
+const list = {
+    title: 'Learn js',
+    description: 'Let`s do it',
+    complited: false
+};
+function todo(todo, fieldsToUpdates) {
+    return { ...todo, ...fieldsToUpdates };
+}
+const callFn = todo(list, {
+    description: "Hiting putin by bullets"
+});

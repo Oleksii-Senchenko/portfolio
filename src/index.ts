@@ -69,11 +69,11 @@ const students = {
 
 // If we want to change the value of any object key, we must use "Partial"
 
-type Todo = {
-  title: string;
-  description: string;
-  complited: boolean;
-};
+// type Todo = {
+//   title: string;
+//   description: string;
+//   complited: boolean;
+// };
 
 const todo1: Todo = {
   title: "Learn TS",

@@ -34,3 +34,27 @@ function getProperty<ObjectType, KeyType extends keyof ObjectType>(obj:ObjectTyp
 
 const student1 = getProperty(student, "age")
 console.log(student1);
+
+//partial
+
+type Todo = {
+    title:string,
+    description: string,
+    complited: boolean
+}
+
+
+const list = {
+    title:'Learn js',
+    description: 'Let`s do it',
+    complited: false
+}
+
+
+function todo(todo:Todo, fieldsToUpdates: Partial<Todo>):Todo {
+    return {...todo, ...fieldsToUpdates}
+}
+
+const callFn = todo(list, {
+    description: "Hiting putin by bullets"
+})
