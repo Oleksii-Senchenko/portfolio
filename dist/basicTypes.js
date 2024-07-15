@@ -3,7 +3,7 @@
 let count = 100; //type number
 let userName = "Bober"; //type string
 let isActive = true; //type boolean
-let empty = null; //type null
+// let empty: null = null; //type null
 let udf = undefined; //type undefined
 // count = 'qwe' || error bocouse type !== number
 // string = 12 || error bocouse type !== string

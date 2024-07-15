@@ -72,12 +72,6 @@ console.log(todo2);
 // };
 //user.age = 12 ()=> error becouse we used property "Readonly"
 const arrOfNum = [1, 2, 3, 4, 5, 6, 7];
-const bobSummery = {
-    name: "bob",
-    age: 12,
-    // address: "Lavanda" It does not work becouse wo took only name and age in //=>"type PersonSummery"<=\\
-    //IT`S PICK
-};
 const julianSummery = {
     name: "bob",
     age: 12,

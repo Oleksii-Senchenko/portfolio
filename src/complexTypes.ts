@@ -4,7 +4,7 @@
 const arr: number[] = [2, 3, 4, 5, 6]; //array of numbers (numbers[])
 // arr.push('12')  || error because type !== number
 
-const str: string[] = ["a", "b", "c"];
+// const str: string[] = ["a", "b", "c"];
 // str.push(1) || error because type !== string
 
 //obj
@@ -36,9 +36,9 @@ type eventType = "lesson" | "work";
 
 //any
 
-let age: any = 23;
-age = 12;
-age = "12";
+// let age: any = 23;
+// age = 12;
+// age = "12";
 
 //unknown
 
@@ -58,7 +58,7 @@ enum UserRole {
 function checkUserRole(role: UserRole): void {
   switch (role) {
     case UserRole.Admin:
-      console.log("You are an admin");
+      // console.log("You are an admin");
 
       break;
     case UserRole.Moderator:
@@ -81,7 +81,7 @@ function checkUserRole(role: UserRole): void {
 }
 
 const call = checkUserRole(UserRole.Admin);
-console.log(call);
+// console.log(call);
 
 //functions
 
@@ -141,3 +141,32 @@ const admin: optionalType = {
   age: 12,
   role: "Admin",
 };
+
+////////////////////////
+//User-Defined
+
+
+type Admin = {
+  name: string;
+  privileges: string[];
+};
+
+type Employee = {
+  name: string;
+  startDate: Date;
+};
+
+type Staff = Admin | Employee;
+
+function isEmplyee(staff: Staff): staff is Employee {
+  return (staff as Employee).startDate !== undefined;
+}
+
+const staffMember: Staff = { name: " Bob", startDate: new Date() };
+
+if (isEmplyee(staffMember)) {
+ console.log(
+    `Welcome on board, ${staffMember.name}! Your start date is ${staffMember.startDate}`
+  );
+  
+}

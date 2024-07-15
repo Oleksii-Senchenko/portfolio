@@ -109,21 +109,21 @@ const arrOfNum: ReadonlyArray<number> = [1, 2, 3, 4, 5, 6, 7];
 
 //////////pick
 
-type Person = {
-  age: number;
-  name: string;
-  address: string;
-};
+// type Person = {
+//   age: number;
+//   name: string;
+//   address: string;
+// };
 
-type PersonSummery = Pick<Person, "name" | "age">;
+// type PersonSummery = Pick<Person, "name" | "age">;
 
-const bobSummery: PersonSummery = {
-  name: "bob",
-  age: 12,
+// const bobSummery: PersonSummery = {
+//   name: "bob",
+//   age: 12,
   // address: "Lavanda" It does not work becouse wo took only name and age in //=>"type PersonSummery"<=\\
 
   //IT`S PICK
-};
+// };
 
 type Perso1 = {
   age: number;

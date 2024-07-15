@@ -3,7 +3,7 @@
 //arr
 const arr = [2, 3, 4, 5, 6]; //array of numbers (numbers[])
 // arr.push('12')  || error because type !== number
-const str = ["a", "b", "c"];
+// const str: string[] = ["a", "b", "c"];
 // str.push(1) || error because type !== string
 //obj
 //long form type of obj ↓↓↓↓↓
@@ -17,9 +17,9 @@ const user = {
 };
 // const events: eventType = 'close' || error because type !== lesson or work
 //any
-let age = 23;
-age = 12;
-age = "12";
+// let age: any = 23;
+// age = 12;
+// age = "12";
 //unknown
 let voice = "high";
 voice = 23;
@@ -36,7 +36,7 @@ var UserRole;
 function checkUserRole(role) {
     switch (role) {
         case UserRole.Admin:
-            console.log("You are an admin");
+            // console.log("You are an admin");
             break;
         case UserRole.Moderator:
             console.log("You are an Moderator");
@@ -53,7 +53,6 @@ function checkUserRole(role) {
     }
 }
 const call = checkUserRole(UserRole.Admin);
-console.log(call);
 function userConstructor(name, age, hobby) {
     return {
         name,
@@ -78,3 +77,10 @@ const admin = {
     age: 12,
     role: "Admin",
 };
+function isEmplyee(staff) {
+    return staff.startDate !== undefined;
+}
+const staffMember = { name: " Bob", startDate: new Date() };
+if (isEmplyee(staffMember)) {
+    console.log(`Welcome on board, ${staffMember.name}! Your start date is ${staffMember.startDate}`);
+}
